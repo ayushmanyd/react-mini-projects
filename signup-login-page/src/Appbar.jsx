@@ -1,7 +1,10 @@
 import Button from "@mui/material/Button";
 import Typography from "@mui/joy/Typography";
+import { useNavigate } from "react-router-dom";
 
 function Appbar() {
+  const navigate = useNavigate();
+
   return (
     <div
       style={{
@@ -11,8 +14,8 @@ function Appbar() {
       }}
     >
       <div>
-        <Typography level="h4">
-          <a href="http://localhost:5173/" style={{ textDecoration: "none" }}>
+        <Typography level="h2">
+          <a href="http://localhost:5173/" style={{ color: "#1976d2", textDecoration: "none" }}>
             CodeCourse
           </a>
         </Typography>
@@ -20,7 +23,7 @@ function Appbar() {
       <div>
         <Button
           variant="plain"
-          style={{ fontWeight: "bold", marginRight: 5 }}
+          style={{ color: "#2dba4e", fontWeight: "bolder", marginRight: 5 }}
           onClick={() => {
             window.open("https://github.com/ayushmanyd", "_blank");
           }}
@@ -31,7 +34,7 @@ function Appbar() {
           variant="outlined"
           style={{ fontWeight: "bold", marginRight: 5 }}
           onClick={() => {
-            window.location = "/signup";
+            navigate("/signup");
           }}
         >
           Sign up
@@ -40,7 +43,7 @@ function Appbar() {
           variant="outlined"
           style={{ fontWeight: "bold", textDecoration: "none" }}
           onClick={() => {
-            window.location = "/signin";
+            navigate("/signin");
           }}
         >
           Log in
