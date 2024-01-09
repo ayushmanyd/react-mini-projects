@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 
@@ -9,11 +8,16 @@ function App() {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <Card style={{ padding: 20, width: 500 }}>
-          <Typography variant="h3">Counter Game</Typography>
+      <div style={{ display: "flex", justifyContent: "center", margin: 100 }}>
+        <Card style={{ padding: 30, width: 500, height: 200 }}>
+          <Typography variant="h2" textAlign={"center"}>
+            Counter Game
+          </Typography>
+          <br />
+          <br />
           <br />
           <Buttons count={count} setCount={setCount} />
+          <br />
           <CountComponent count={count} />
         </Card>
       </div>
@@ -21,16 +25,16 @@ function App() {
   );
 }
 
-function Buttons() {
+function Buttons({ count, setCount }) {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{ display: "flex", justifyContent: "space-between" }}>
       <Increase count={count} setCount={setCount} />
       <Decrease count={count} setCount={setCount} />
     </div>
   );
 }
 
-function Increase() {
+function Increase({ count, setCount }) {
   return (
     <div>
       <Button
@@ -41,6 +45,13 @@ function Increase() {
       >
         Increase Counter
       </Button>
+    </div>
+  );
+}
+
+function Decrease({ count, setCount }) {
+  return (
+    <div>
       <Button
         variant="contained"
         onClick={() => {
@@ -49,6 +60,16 @@ function Increase() {
       >
         Decrease Counter
       </Button>
+    </div>
+  );
+}
+
+function CountComponent({ count }) {
+  return (
+    <div>
+      <Typography variant="h4" textAlign={"center"}>
+        {count}
+      </Typography>
     </div>
   );
 }
