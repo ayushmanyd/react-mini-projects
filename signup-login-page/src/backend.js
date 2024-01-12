@@ -2,6 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 const app = express();
+const port = 3000;
 
 app.use(express.json());
 
@@ -70,4 +71,6 @@ app.post('/users/login', (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+})
