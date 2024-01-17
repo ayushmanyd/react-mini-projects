@@ -10,6 +10,5 @@ A Signup & Login page in React.
 - Signup
 </br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/signup-login-page/Screenshots/Signup.png" alt="Signup" width="500">
 
-
 - Signin
 </br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/signup-login-page/Screenshots/Signin.png" alt="Signin" width="500">
