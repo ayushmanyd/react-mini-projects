@@ -24,3 +24,13 @@
 </br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/counter-game/Screenshots/After%20using%20Recoil.png" alt="After using Recoil" width="400">
 
 <hr>
+
+### 3. Weather App: Weather App using React
+
+- Home Page | Search the Location here.
+</br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/weather_app/Screenshots/V1%20-%20Homepage.png" alt="Home Page" width="400" img-allign= "center">
+
+- Result | Weather Search Results
+</br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/weather_app/Screenshots/V1%20-%20WeatherAppSearchResult.png" alt="Weather Search Results" width="400">
+
+<hr>
