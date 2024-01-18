@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&display=swap");
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+h1 {
+  font-family: "Red Hat Display";
+}
+
+.navbar {
+  background-color: #070027;
+  border-radius: 1rem;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+.app .top {
+  padding: 20px 270px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.genQRCode {
+  font-family: "Red Hat Display";
+  font-size: 22px;
+  color: #070027;
+  display: flex;
+  justify-content: center;
+}
+
+.app .qrcode {
+  display: flex;
+  justify-content: center;
+}
+
+.app .genQR {
+  margin: 0;
+  padding: 1%;
+}
