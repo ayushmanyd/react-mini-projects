@@ -13,7 +13,6 @@ function App() {
   function generateQrCode() {
     setIsShown((current) => !current);
     setQRCode(inputText);
-    // inputText("");
   }
 
   return (
