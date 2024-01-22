@@ -1,0 +1,21 @@
+body {
+    background-color: #cfcfcf;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 100;
+}
+
+.searchtextbox {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.textbox {
+    width: 500px;
+}
+
+
