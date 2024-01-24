@@ -21,6 +21,21 @@ function App() {
     githubUserProfileData();
   }, []);
 
+  function userData({ user }) {
+    const { avatar_url, followers, public_repos, name, login } = user;
+
+    return (
+      <div className="user">
+        <div className="profilepic">
+          <img src={avatar_url} alt="User Profile Pic" />
+        </div>
+        <div className="githubid">
+          <a href={`https://github.com/${login}`}>{name || login}</a>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="container">
@@ -53,7 +68,7 @@ function App() {
                 variant="contained"
                 style={{
                   fontWeight: 600,
-                  backgroundColor: "#5e057e"
+                  backgroundColor: "#5e057e",
                 }}
               >
                 Search Profile
