@@ -4,36 +4,37 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import UserData from "./user";
 import "./App.css";
 
 function App() {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("hkirat");
+  const [userData, setUserData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   async function githubUserProfileData() {
+    setLoading(true);
     const res = await fetch(`https://api.github.com/users/${username}`);
     const userProfileData = await res.json();
     console.log(userProfileData);
+
+    if (userProfileData) {
+      setUserData(userProfileData);
+      setLoading(false);
+      setUsername('');
+    }
   }
 
-  function handleSearch() {}
+  function handleSearch() {
+    githubUserProfileData();
+  }
 
   useEffect(() => {
     githubUserProfileData();
   }, []);
 
-  function userData({ user }) {
-    const { avatar_url, followers, public_repos, name, login } = user;
-
-    return (
-      <div className="user">
-        <div className="profilepic">
-          <img src={avatar_url} alt="User Profile Pic" />
-        </div>
-        <div className="githubid">
-          <a href={`https://github.com/${login}`}>{name || login}</a>
-        </div>
-      </div>
-    );
+  if(loading) {
+    return
   }
 
   return (
@@ -61,7 +62,6 @@ function App() {
                 variant="outlined"
                 value={username}
                 onChange={(event) => setUsername(event.target.value)}
-                onKeyDown={githubUserProfileData()}
               />
               <Button
                 onClick={handleSearch}
@@ -74,6 +74,9 @@ function App() {
                 Search Profile
               </Button>
             </div>
+          </div>
+          <div className="userdata">
+            {userData !== null ? <UserData user={userData} /> : null}
           </div>
         </Card>
       </div>
