@@ -8,7 +8,7 @@ import UserData from "./user";
 import "./App.css";
 
 function App() {
-  const [username, setUsername] = useState("hkirat");
+  const [username, setUsername] = useState("ayushmanyd");
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -40,7 +40,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <Card style={{ padding: 30, width: 900, height: 570 }}>
+        <Card style={{ padding: 30, width: 900, height: 'auto', border: '5px' }}>
           <Typography
             variant="h3"
             textAlign={"center"}
