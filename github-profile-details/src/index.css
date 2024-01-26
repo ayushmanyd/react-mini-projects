@@ -1,21 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;800;900&display=swap");
+
 body {
-    background-color: #cfcfcf;
+  background-color: #e2e2e2;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    margin: 100;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+  padding: 10px;
+  border-radius: 6px;
 }
 
 .searchtextbox {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user {
+  margin: 3%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #5e057e;
+  width: 70%;
+}
+
+.pic {
+  height: 140px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.userdata {
+  display: flex;
+  justify-content: center;
+  border: 5px;
+  border-color: black;
+}
+
+.usertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .textbox {
-    width: 500px;
+  width: 500px;
 }
 
-
+.githubid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
