@@ -21,7 +21,7 @@ function App() {
     if (userProfileData) {
       setUserData(userProfileData);
       setLoading(false);
-      setUsername('');
+      setUsername("");
     }
   }
 
@@ -33,14 +33,16 @@ function App() {
     githubUserProfileData();
   }, []);
 
-  if(loading) {
-    return
+  if (loading) {
+    return;
   }
 
   return (
     <>
       <div className="container">
-        <Card style={{ padding: 30, width: 900, height: 'auto', border: '5px' }}>
+        <Card
+          style={{ padding: 30, width: 900, height: "auto", border: "5px" }}
+        >
           <Typography
             variant="h3"
             textAlign={"center"}
@@ -50,7 +52,7 @@ function App() {
               color: "#5e057e",
             }}
           >
-            GitHub Profile Details
+            <a href="http://localhost:5173">GitHub Profile Details</a>
           </Typography>
           <div className="searchbar">
             <div className="searchtextbox">
