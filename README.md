@@ -44,3 +44,13 @@
   </br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/qr-code-generator/Screenshots/V1%20-%20QR%20Generated.png" alt="Weather Search Results" width="400">
 
 <hr>
+
+### 5. GitHub Profile Details Viewer in React using GitHub Api.
+
+- Microsoft details
+</br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/github-profile-details/Screenshots/V1%20-%20microsoft.png" alt="Before using Recoil" width="400" img-allign= "center">
+
+- Google details
+</br><img src="https://raw.githubusercontent.com/ayushmanyd/react-mini-projects/main/github-profile-details/Screenshots/V1%20-%20google.png" alt="After using Recoil" width="400">
+
+<hr>
